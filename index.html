@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento Barbearia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Agendamento Barbearia</h1>
+
+  <form id="form-agendamento">
+    <label for="cliente">Nome do cliente</label>
+    <input type="text" id="cliente" name="cliente" required>
+
+    <label for="servico">Serviço</label>
+    <select id="servico" name="servico" required>
+      <option value="">Selecione</option>
+      <option value="Corte">Corte</option>
+      <option value="Barba">Barba</option>
+      <option value="Corte + Barba">Corte + Barba</option>
+    </select>
+
+    <label for="data-hora">Data e horário</label>
+    <input type="datetime-local" id="data-hora" name="data-hora" required>
+
+    <button type="submit">Agendar</button>
+  </form>
+
+  <section id="lista-agendamentos">
+    <h2>Agendamentos</h2>
+    <ul id="agendamentos"></ul>
+  </section>
+</body>
+</html><script src="script.js"></script>
+</body>
